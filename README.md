@@ -56,3 +56,15 @@ Add test information inside using this command:
 The database is set.
 
 ### Run server
+
+You can build the project with this command:
+```bash
+cd server
+mvn clean package
+cd ..
+```
+
+And run the server with :
+```bash
+TODO
+```
