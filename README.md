@@ -54,3 +54,5 @@ Add test information inside using this command:
 ```
 
 The database is set.
+
+### Run server
