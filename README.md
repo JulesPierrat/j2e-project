@@ -29,7 +29,7 @@ http://localhost/ProjetJ2E
 First, you will need a postgresql server.
 Start it:
 ```bash
-sudo service apache2 start
+sudo service postgresql start
 ```
 
 Now you can create a new database and a new user for this project:
@@ -46,5 +46,5 @@ grant all privileges on database test to test;
 The database is create.
 Add test information inside using this command:
 ```bash
-sudo -u postgres psql
+TODO
 ```
