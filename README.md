@@ -41,11 +41,16 @@ sudo -u postgres psql
 create database test;
 create user test with encrypted password 'test';
 grant all privileges on database test to test;
+exit;
 ```
-
 The database is create.
+Now we have to connect to postgres with test user (Password is test):
+```bash
+sudo -u postgres psql -d test -U test -W;
+```
 Add test information inside using this command:
 ```bash
-\connect test;
-\i 'REPOSITORYROOT/database/test.sql';
+\i 'REPOSITORYROOT/database/test.sql'
 ```
+
+The database is set.
