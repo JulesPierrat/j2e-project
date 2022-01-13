@@ -42,9 +42,10 @@ create database test;
 create user test with encrypted password 'test';
 grant all privileges on database test to test;
 ```
+Exit the postgres terminal with '\q' and exit the user with 'exit'
 
 The database is create.
 Add test information inside using this command:
 ```bash
-TODO
+/i 'REPOSITORYROOT/database/test.sql'
 ```
