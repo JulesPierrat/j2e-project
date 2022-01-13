@@ -26,3 +26,25 @@ Now you can access the client interface at:
 http://localhost/ProjetJ2E
 
 ### DataBase PostgreSQL
+First, you will need a postgresql server.
+Start it:
+```bash
+sudo service apache2 start
+```
+
+Now you can create a new database and a new user for this project:
+```bash
+sudo -u postgres psql
+```
+
+```bash
+create database test;
+create user test with encrypted password 'test';
+grant all privileges on database test to test;
+```
+
+The database is create.
+Add test information inside using this command:
+```bash
+sudo -u postgres psql
+```
